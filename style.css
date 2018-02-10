@@ -310,7 +310,37 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
+  
+/*Navigation
+*/
 
+nav.nav li{
+float:left;
+display:inline;
+padding-right:15px;
+}
+nav.nav a{
+text-decoration:none;
+}
+nav.main-nav{
+height:100px;
+overflow:hidden;
+background:#FFFFF;
+color:#DEDEDE;
+padding-top:7px;
+}
+nav.main-nav li{
+height:40px;
+line-height:40px;
+}
+nav.main-nav a{
+color:#222;
+text-decoration:none;
+padding:8px;
+}
+nav.main-nav a:hover{
+color:#009acd;
+}
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
