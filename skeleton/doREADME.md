@@ -1,6 +1,3 @@
-# [Skeletheme] is HTML to Wordpress Theme conversion project based on simple Skeleton boilerplate
-
-
 # [Skeleton](http://getskeleton.com)
 Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
 
