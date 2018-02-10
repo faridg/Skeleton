@@ -1,4 +1,4 @@
-# [Skeletheme]is HTML to Wordpress Theme conversion project based on simple Skeleton boilerplate
+# [Skeletheme] is HTML to Wordpress Theme conversion project based on simple Skeleton boilerplate
 
 
 # [Skeleton](http://getskeleton.com)
