@@ -4,8 +4,9 @@
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Wordpress SkeleTheme</title>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('name'); ?></title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -19,43 +20,42 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>
+
+<body <?php body_class(); ?>>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Skeletheme Basic Page</h4>
-        <p>This index.php page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-	
-	<div class="navbar-spacer"></div>
-	   <nav class="navbar">
-		  <div class="container">
-			<ul class="navbar-list">
-			  <li class="navbar-item"><a class="navbar-link" href="#intro">Home</a></li>
-			  <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-			  <li class="navbar-item"><a class="navbar-link" href="#services">Services</a></li>
-			  <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-			</ul>
-		  </div>
-		</nav>
-
-  
-  
-  
+<div class="navbar-spacer"></div>
+	<nav class="nav main-nav">
+		<div class="container">
+					<?php
+						$args = array(
+							'theme_location' => 'primary',
+							);
+					?>
+					<?php wp_nav_menu($args); ?>
+		</div>
+	</nav>
+	<div class="container">
+	<div class="row">
+	  <div class="one-half column" style="margin-top: 25%">
+		<h4>Skeletheme Basic Page</h4>
+		<p>This index.php page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+	  </div>
+	</div>
+	</div>
+	<?php wp_footer(); ?>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
