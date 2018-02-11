@@ -36,25 +36,25 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="navbar-spacer"></div>
+	<div class="navbar-spacer"></div>
 	<nav class="nav main-nav">
 		<div class="container">
-					<?php
-						$args = array(
-							'theme_location' => 'primary',
-							);
-					?>
-					<?php wp_nav_menu($args); ?>
+			<?php
+				$args = array(
+					'theme_location' => 'primary',
+				);
+			?>
+			<?php wp_nav_menu($args); ?>
 		</div>
 	</nav>
-	<div class="container">
-	<div class="row">
-	  <div class="one-half column" style="margin-top: 25%">
-		<h4>Skeletheme Basic Page</h4>
-		<p>This index.php page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-	  </div>
-	</div>
-	</div>
+		<div class="container">
+		<div class="row">
+		  <div class="one-half column" style="margin-top: 25%">
+			<h4>Skeletheme Basic Page</h4>
+			<p>This index.php page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+		  </div>
+		</div>
+		</div>
 	<?php wp_footer(); ?>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
